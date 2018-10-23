@@ -1,0 +1,89 @@
+.formify-field-label {
+	border:solid 1px rgba(255,255,255,0) !important;
+	background-color:transparent !important;
+	box-shadow:none !important;
+	width:75%;
+}
+
+.formify-field-label:hover {
+	border:dashed 1px #ccc !important;
+}
+
+.formify-field-label:focus {
+	border:dashed 1px #777 !important;
+}
+
+.ccm-search-results-table tr th i, .ccm-search-results-table tr td i {
+	font-size:1.325em;
+}
+
+.ccm-search-results-table tr.ft-divider td {
+	border-top:solid 4px #006699;
+}
+
+.ccm-search-results-table tr td i {
+	color:#aaa;
+	transition: all 250ms;
+}
+
+.ccm-search-results-table tr td i.on {
+	color:#aaa;
+}
+
+.ccm-search-results-table tr td i:hover:not(.on) {
+	opacity:0.4;
+}
+
+.ccm-search-results-table tr td i.formify-field-add {
+	color:#5ed300;
+	opacity:0.4;
+}
+
+.ccm-search-results-table tr td i.formify-field-add:hover {
+	opacity:1;
+}
+
+.ccm-search-results-table tr td i.formify-field-save-label-check, .ccm-search-results-table tr td i.formify-field-save-label-check:hover {
+	color:#5ed300;
+	opacity:0;
+}
+
+.ccm-search-results-table tr td i.formify-field-save-label-check.on {
+	opacity:1;
+}
+
+.ccm-search-results-table tr td i.formify-field-edit:hover {
+	color:#555;
+	opacity:1;
+}
+
+.ccm-search-results-table tr td i.formify-field-primary.on, .ccm-search-results-table tr td i.formify-field-primary:hover {
+	color:#ff0054;
+}
+
+.ccm-search-results-table tr td i.formify-field-required.on, .ccm-search-results-table tr td i.formify-field-required:hover {
+	color:#ff0000;
+}
+
+.ccm-search-results-table tr td i.formify-field-indexable.on, .ccm-search-results-table tr td i.formify-field-indexable:hover {
+	color:#006fcd;
+}
+
+.ccm-search-results-table tr td i.formify-field-emailable.on, .ccm-search-results-table tr td i.formify-field-emailable:hover {
+	color:#00cccf;
+}
+
+.ccm-search-results-table tr td i.formify-field-sort:hover {
+	cursor:move;
+	color:#555;
+	opacity:1;
+}
+
+.ccm-search-results-table tr td i.formify-field-delete {
+	opacity:0.6;
+	color:#aa0000;
+}
+
+.ccm-search-results-table tr td i.formify-field-delete:hover {
+	opacity:1;
+}

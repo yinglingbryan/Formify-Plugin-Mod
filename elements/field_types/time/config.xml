@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<fieldtype name="Time" iconclass="fa-clock-o" hasoptions="false">
+	
+	<properties>
+		<property handle="timeInterval" />
+	</properties>
+</fieldtype>

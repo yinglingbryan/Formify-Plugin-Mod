@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<integration name="Stripe">
+	
+	<footeritems>
+		<item type="javascript" file="https://js.stripe.com/v2/stripe.js" />
+		<item type="javascript" file="https://checkout.stripe.com/checkout.js" />	
+	</footeritems>
+	
+	<keys>
+		<key context="form" name="Test Secret Key" handle="test_secret_key" type="text" required="true" />
+		<key context="form" name="Test Publishable Key" handle="test_publishable_key" type="text" required="true" />
+		<key context="form" name="Live Secret Key" handle="secret_key" type="text" required="true" />
+		<key context="form" name="Live Publishable Key" handle="publishable_key" type="text" required="true" />
+		<key context="form" name="Transaction Description" handle="transaction_description" type="text" />
+		<key context="form" name="Mode" handle="mode" type="select" required="true">
+			<options>
+				<option value="live">Live</option>
+				<option value="test">Test</option>
+			</options>
+		</key>
+	</keys>
+	
+	<fields>
+		<field type="label" label="&lt;hr /&gt;&lt;h2&gt;Payment Details&lt;/h2&gt;" required="true" />
+		<field type="textbox" label="Credit Card Number" name="stripe_card_num" required="true" />
+		<field type="textbox" label="Name on Card" name="stripe_name" required="true" />
+		<field type="textbox" label="Expiration (MM/YY)" name="stripe_expiration" required="true" placeholder="MM/YY" />
+		<field type="textbox" label="Card Security Code" name="stripe_code" required="true" />
+	</fields>
+	
+</integration>

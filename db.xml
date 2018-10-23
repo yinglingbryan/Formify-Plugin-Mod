@@ -1,0 +1,416 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="FormifyForms">
+		<field name="fID" type="I">
+			<key />
+			<unsigned />
+			<autoincrement />
+		</field>
+		<field name="isDeleted" type="I">
+			<default value="0" />
+		</field>
+		<field name="dateCreated" type="C" size="255" />
+		<field name="name" type="C" size="255" />
+		<field name="handle" type="C" size="255" />
+		<field name="submitLabel" type="C" size="255" />
+		<field name="submitAction" type="C" size="255" />
+		<field name="submitActionMessage" type="X2" />
+		<field name="submitActionCollectionID" type="I">
+			<default value="0" />
+		</field>
+		<field name="submitActionCollectionName" type="C" size="255" />
+		<field name="submitActionURL" type="X" />
+		<field name="submitActionPassRecordID" type="I">
+			<default value="0" />
+		</field>
+		<field name="submitActionRecordIDParameter" type="C" size="255" />
+		<field name="submitActionProcessor" type="C" size="255" />
+		<field name="captcha" type="I">
+			<default value="0" />
+		</field>
+		<field name="grecaptcha" type="I">
+			<default value="0" />
+		</field>
+		<field name="grecaptchaSiteKey" type="C" size="255" />
+		<field name="grecaptchaSecretKey" type="C" size="255" />
+		<field name="maxSubmissions" type="I">
+			<default value="0" />
+		</field>
+		<field name="commerceCurrencySymbol" type="C" size="10" />
+		<field name="commerceConfirmationMessage" type="X2" />
+		<field name="commerceMaximumOrderPrice" type="N" size="14.2"/>
+		<field name="requiredIndicator" type="C" size="255" />
+		<field name="requiredColor" type="C" size="255" />
+		<field name="defaultRecordStatus" type="I">
+			<default value="0" />
+		</field>
+		<field name="ownerCanEdit" type="I">
+			<default value="0" />
+		</field>
+		<field name="ownerCanDelete" type="I">
+			<default value="0" />
+		</field>
+		<field name="oneRecordPerUser" type="I">
+			<default value="0" />
+		</field>
+		<field name="magic" type="I">
+			<default value="0" />
+		</field>
+		<field name="autoExpire" type="I">
+			<default value="0" />
+		</field>
+		<field name="gID" type="I">
+			<default value="0" />
+		</field>
+		
+		<field name="errorValidation" type="X2" />
+		<field name="errorSubmissions" type="X2" />
+		<field name="errorCaptcha" type="X2" />
+		<field name="errorEcommerce" type="X2" />
+		<field name="errorPermission" type="X2" />
+	</table>
+	
+	<table name="FormifyGroups">
+		<field name="gID" type="I">
+			<key />
+			<unsigned />
+			<autoincrement />
+		</field>
+		<field name="name" type="C" size="255" />
+		<field name="sortPriority" type="I">
+			<default value="0" />
+		</field>
+	</table>
+	
+	<table name="FormifyPermissions">
+		<field name="fpID" type="I">
+			<key />
+			<unsigned />
+			<autoincrement />
+		</field>
+		<field name="fID" type="I">
+			<default value="0" />
+		</field>
+		<field name="gID" type="I">
+			<default value="0" />
+		</field>
+		<field name="type" type="C" size="255" />
+	</table>
+	
+	<table name="FormifyIntegrations">
+		<field name="iID" type="I">
+			<key />
+			<unsigned />
+			<autoincrement />
+		</field>
+		<field name="fID" type="I">
+			<default value="0" />
+		</field>
+		<field name="handle" type="C" size="255" />
+	</table>
+	
+	<table name="FormifyIntegrationConfig">
+		<field name="icID" type="I">
+			<key />
+			<unsigned />
+			<autoincrement />
+		</field>
+		<field name="fID" type="I">
+			<default value="0" />
+		</field>
+		<field name="ffID" type="I">
+			<default value="0" />
+		</field>
+		<field name="handle" type="C" size="255" />
+		<field name="configKey" type="C" size="255" />
+		<field name="configValue" type="C" size="255" />
+	</table>
+	
+	<table name="FormifyFields">
+		<field name="ffID" type="I">
+			<key />
+			<unsigned />
+			<autoincrement />
+		</field>
+		<field name="fID" type="I">
+			<default value="0" />
+		</field>
+		<field name="isDeleted" type="I">
+			<default value="0" />
+		</field>
+		<field name="label" type="X2" />
+		<field name="type" type="C" size="255" />
+		<field name="sortPriority" type="I">
+			<default value="0" />
+		</field>
+		<field name="isPrimary" type="I">
+			<default value="0" />
+		</field>
+		<field name="isRequired" type="I">
+			<default value="0" />
+		</field>
+		<field name="isUnique" type="I">
+			<default value="0" />
+		</field>
+		<field name="isIndexable" type="I">
+			<default value="0" />
+		</field>
+		<field name="includeInEmail" type="I">
+			<default value="0" />
+		</field>
+		<field name="handle" type="C" size="255" />
+		<field name="placeholder" type="X2" />
+		<field name="defaultValueSource" type="X2" />
+		<field name="defaultValue" type="X2" />
+		<field name="urlParameter" type="X2" />
+		<field name="fieldClass" type="C" size="255" />
+		<field name="containerClass" type="C" size="255" />
+		<field name="firstOptionBlank" type="I">
+			<default value="0" />
+		</field>
+		<field name="optionsSource" type="C" size="255" />
+		<field name="ogFormID" type="I">
+			<default value="0" />
+		</field>
+		<field name="ogFieldID" type="I">
+			<default value="0" />
+		</field>
+		<field name="ogID" type="I">
+			<default value="0" />
+		</field>
+		<field name="fieldSize" type="C" size="255" />
+		<field name="maxLength" type="C" size="255" />
+		<field name="regex" type="C" size="255" />
+		<field name="wysiwygFormat" type="C" size="255" />
+		<field name="toolbar" type="I">
+			<default value="0" />
+		</field>
+		<field name="price" type="N" size="14.2"/>
+		<field name="qtyStart" type="I">
+			<default value="0" />
+		</field>	
+		<field name="qtyEnd" type="I">
+			<default value="0" />
+		</field>	
+		<field name="qtyIncrement" type="I">
+			<default value="0" />
+		</field>
+		<field name="commerceName" type="C" size="255" />
+		<field name="dateFormat" type="C" size="255" />
+		<field name="dateInterface" type="C" size="255" />
+		<field name="minYear" type="C" size="255" />
+		<field name="maxYear" type="C" size="255" />
+		<field name="isExpiration" type="I">
+			<default value="0" />
+		</field>
+		<field name="timeInterval" type="I" />
+		<field name="fsID" type="I">
+			<default value="0" />
+		</field>
+		<field name="autoPopulateFieldID" type="I">
+			<default value="0" />
+		</field>
+		<field name="nlToBr" type="I">
+			<default value="0" />
+		</field>
+		<field name="validateSection" type="I">
+			<default value="0" />
+		</field>
+		<field name="enableRules" type="I">
+			<default value="0" />
+		</field>
+		<field name="ruleAction" type="C" size="255" />
+		<field name="ruleRequirement" type="C" size="255" />
+	</table>
+	
+	<table name="FormifyOptions">
+		<field name="oID" type="I">
+			<key />
+			<unsigned />
+			<autoincrement />
+		</field>
+		<field name="ffID" type="I">
+			<default value="0" />
+		</field>
+		<field name="value" type="C" size="255" />
+	</table>
+	
+	<table name="FormifyOptionGroups">
+		<field name="ogID" type="I">
+			<key />
+			<unsigned />
+			<autoincrement />
+		</field>
+		<field name="name" type="C" size="255" />
+	</table>
+	
+	<table name="FormifyOptionGroupOptions">
+		<field name="oID" type="I">
+			<key />
+			<unsigned />
+			<autoincrement />
+		</field>
+		<field name="ogID" type="I">
+			<default value="0" />
+		</field>
+		<field name="label" type="C" size="255" />
+		<field name="value" type="C" size="255" />
+	</table>
+	
+	<table name="FormifyRecords">
+		<field name="rID" type="I">
+			<key />
+			<unsigned />
+			<autoincrement />
+		</field>
+		<field name="fID" type="I">
+			<default value="0" />
+		</field>
+		<field name="isDeleted" type="I">
+			<default value="0" />
+		</field>
+		<field name="created" type="C" size="255" />
+		<field name="updated" type="C" size="255" />
+		<field name="ipAddress" type="C" size="255" />
+		<field name="uID" type="I">
+			<default value="0" />
+		</field>
+		<field name="sortPriority" type="I">
+			<default value="0" />
+		</field>
+		<field name="token" type="C" size="255" />
+		<field name="name" type="C" size="255" />
+		<field name="answers" type="X2" />
+		<field name="amountCharged" type="N" size="10.2">
+			<default value="0.00" />
+		</field>
+		<field name="amountPaid" type="N" size="10.2">
+			<default value="0.00" />
+		</field>
+		<field name="approval" type="I">
+			<default value="0" />
+		</field>
+		<field name="expiration" type="C" size="255" />
+		<field name="searchIndex" type="X2" />
+		<field name="matchingFilters" type="C" size="255" />
+		<field name="source" type="C" size="255" />
+		<field name="referrer" type="C" size="255" />
+	</table>
+	
+	<table name="FormifyAnswers">
+		<field name="aID" type="I">
+			<key />
+			<unsigned />
+			<autoincrement />
+		</field>
+		<field name="rID" type="I">
+			<default value="0" />
+		</field>
+		<field name="ffID" type="I">
+			<default value="0" />
+		</field>
+		<field name="value" type="X2" />
+		<field name="isTimestamp" type="I">
+			<default value="0" />
+		</field>
+	</table>
+	
+	<table name="FormifyFilters">
+		<field name="filterID" type="I">
+			<key />
+			<unsigned />
+			<autoincrement />
+		</field>
+		<field name="ffID" type="I">
+			<default value="0" />
+		</field>
+		<field name="value" type="C" size="255" />
+		<field name="exact" type="I1" />
+	</table>
+	
+	<table name="FormifyNotifications">
+		<field name="nID" type="I">
+			<key />
+			<unsigned />
+			<autoincrement />
+		</field>
+		<field name="fID" type="I">
+			<default value="0" />
+		</field>
+		<field name="type" type="C" size="255" />
+		<field name="fromName" type="C" size="255" />
+		<field name="replyAddress" type="C" size="255" />
+		<field name="toAddress" type="C" size="255" />
+		<field name="subject" type="C" size="255" />
+		<field name="tID"  type="C" size="255" />
+		<field name="conditionFieldID" type="I">
+			<default value="0" />
+		</field>
+		<field name="conditionType" type="C" size="255" />
+		<field name="conditionValue" type="C" size="255" />
+	</table>
+	
+	<table name="FormifyRules">
+		<field name="rID" type="I">
+			<key />
+			<unsigned />
+			<autoincrement />
+		</field>
+		<field name="ffID" type="I">
+			<default value="0" />
+		</field>
+		<field name="comparisonFieldID" type="I">
+			<default value="0" />
+		</field>
+		<field name="comparison" type="C" size="255" />
+		<field name="value" type="C" size="255" />
+	</table>
+	
+	<table name="FormifyAttributeValues">
+		<field name="fID" type="I">
+			<key />
+			<unsigned />
+			<default value="0"/>
+		</field>
+		<field name="avID" type="I">
+			<key />
+			<unsigned />
+			<default value="0"/>
+		</field>
+		<field name="akID" type="I">
+			<key />
+			<unsigned />
+			<default value="0"/>
+		</field>
+	</table>
+	
+	<table name="FormifyTemplates">
+		<field name="tID" type="I">
+			<key />
+			<unsigned />
+			<autoincrement />
+		</field>
+		<field name="fID" type="I">
+			<default value="0" />
+		</field>
+		<field name="name" type="C" size="255"></field>
+		<field name="type" type="C" size="255"></field>
+		<field name="header" type="X2"/>
+		<field name="content" type="X2"/>
+		<field name="footer" type="X2"/>
+		<field name="empty" type="X2"/>	
+	</table>
+	
+	<table name="FormifyMigrations">
+		<field name="mID" type="I">
+			<key />
+			<unsigned />
+			<autoincrement />
+		</field>
+		<field name="fID" type="I">
+			<default value="0" />
+		</field>
+		<field name="dateMigrated" type="C" size="255"></field>
+	</table>
+	
+</schema>

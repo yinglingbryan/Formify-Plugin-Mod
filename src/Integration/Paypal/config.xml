@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<integration name="PayPal">
+	
+	<keys>
+		<key context="form" name="PayPal Email" handle="email" type="text" />
+		<key context="form" name="Currency Code" handle="currency" type="select">
+			<options>
+				<option value="USD">USD - U.S. Dollar</option>
+				<option value="AUD">AUD - Australian Dollar</option>
+				<option value="BRL">BRL - Brazilian Real</option>
+				<option value="CAD">CAD - Canadian Dollar</option>
+				<option value="CZK">CZK - Czech Koruna</option>
+				<option value="DKK">DKK - Danish Krone</option>
+				<option value="EUR">EUR - Euro</option>
+				<option value="HKD">HKD - Hong Kong Dollar</option>
+				<option value="HUF">HUF - Hungarian Forint</option>
+				<option value="ILS">ILS - Israeli New Sheqel</option>
+				<option value="JPY">JPY - Japanese Yen</option>
+				<option value="MYR">MYR - Malaysian Ringgit</option>
+				<option value="MXN">MXN - Mexican Peso</option>
+				<option value="NOK">NOK - Norwegian Krone</option>
+				<option value="NZD">NZD - New Zealand Dollar</option>
+				<option value="PHP">PHP - Philippine Peso</option>
+				<option value="PLN">PLN - Polish Zloty</option>
+				<option value="GBP">GBP - Pound Sterling</option>
+				<option value="RUB">RUB - Russian Ruble</option>
+				<option value="SGD">SGD - Singapore Dollar</option>
+				<option value="SEK">SEK - Swedish Krona</option>
+				<option value="CHF">CHF - Swiss Franc</option>
+				<option value="TWD">TWD - Taiwan New Dollar</option>
+				<option value="THB">THB - Thai Baht</option>
+			</options>
+		</key>
+		<key context="form" name="Transaction Description" handle="description" type="text" />
+	</keys>
+	
+</integration>

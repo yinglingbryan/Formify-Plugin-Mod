@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<fieldtype name="Section Divider" iconclass="fa-arrows-h" hasoptions="false" hasinput="false">
+
+	<properties>
+		<property handle="validateSection" />
+	</properties>
+	
+</fieldtype>

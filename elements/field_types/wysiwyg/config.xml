@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<fieldtype name="WYSIWYG Editor" iconclass="fa-arrow-right" hasoptions="false">
+	
+	<properties>
+		<property handle="wysiwygFormat" />
+		<property handle="toolbar" />
+	</properties>
+	
+</fieldtype>

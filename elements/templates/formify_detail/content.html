@@ -1,0 +1,34 @@
+<table cellpadding="0" cellspacing="0" border="0" style="width:100%;background-color:#f3f3f3;">
+  <tr>
+    <td>
+      <table cellpadding="0" cellspacing="0" border="0" style="max-width:600px;margin:50px auto;background-color:#fff;border-radius:4px;">
+        <tr>
+          <td>
+            <table cellpadding="0" cellspacing="0" border="0" style="max-width:500px;margin:50px auto;padding:0 50px;">
+            	<tr>
+            		<td style="margin:0.25em;padding:1em;border-bottom:solid 1px #ccc;"><strong>Field</strong></td>
+            		<td style="margin:0.25em;padding:1em;border-bottom:solid 1px #ccc;"><strong>Value</strong></td>
+            	</tr>
+            	<tr formify-repeat="a in emailableanswers">
+            		<td style="margin:0.25em;padding:1em;border-bottom:solid 1px #eee;">{{ a.label }}&nbsp;</td>
+            		<td style="margin:0.25em;padding:1em;border-bottom:solid 1px #eee;">{{ a.value }}&nbsp;</td>
+            	</tr>
+            	<tr>
+            		<td style="margin:0.25em;padding:1em;border-bottom:solid 1px #eee;">IP Address </td>
+            		<td style="margin:0.25em;padding:1em;border-bottom:solid 1px #eee;">{{ ip }} </td>
+            	</tr>
+            	<tr>
+            		<td style="margin:0.25em;padding:1em;border-bottom:solid 1px #eee;">Record ID </td>
+            		<td style="margin:0.25em;padding:1em;border-bottom:solid 1px #eee;">{{ id }} </td>
+            	</tr>
+            	<tr>
+            		<td style="margin:0.25em;padding:1em;border-bottom:solid 1px #eee;">Timestamp </td>
+            		<td style="margin:0.25em;padding:1em;border-bottom:solid 1px #eee;">{{ timestamp[format:'F j, Y g:i a'] }} </td>
+            	</tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

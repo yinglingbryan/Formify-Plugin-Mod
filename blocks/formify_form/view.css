@@ -1,0 +1,224 @@
+.formify-form.with-style {
+	max-width:650px;
+}
+
+.formify-form.with-style .formify-section {
+	display:none;
+}
+
+.formify-form.with-style .formify-section:nth-of-type(1) {
+	display:block;
+}
+
+.formify-form.with-style .formify-field-container {
+	margin:1em 0;
+}
+
+.formify-form.with-style label {
+}
+
+.formify-form.with-style input[type="text"],
+.formify-form.with-style input[type="email"],
+.formify-form.with-style input[type="tel"],
+.formify-form.with-style input[type="number"],
+.formify-form.with-style input[type="search"],
+.formify-form.with-style input[type="url"],
+.formify-form.with-style input[type="password"] {
+	-webkit-appearance:none;
+	outline:none;
+	font-size:1em;
+	padding:0.5em;
+	border:solid 1px #ccc;
+	border-radius:3px;
+	background-color:#fff;
+	transition:border 300ms, box-shadow 200ms;
+	display:block;
+	width:50%;
+}
+
+.formify-form.with-style input[type="text"].active,
+.formify-form.with-style input[type="email"].active,
+.formify-form.with-style input[type="tel"].active,
+.formify-form.with-style input[type="number"].active,
+.formify-form.with-style input[type="search"].active,
+.formify-form.with-style input[type="url"].active,
+.formify-form.with-style input[type="password"].active,
+.formify-form.with-style select.active {
+	border:solid 1px #aaa;
+	box-shadow:0 0 5px rgba(0,162,176,0.4);
+}
+
+.formify-form.with-style .formify-error label, .formify-form.with-style .formify-error .formify-legend {
+	color:#ff0000;
+}
+
+.formify-form.with-style .formify-error input[type="text"],
+.formify-form.with-style .formify-error input[type="email"],
+.formify-form.with-style .formify-error input[type="tel"],
+.formify-form.with-style .formify-error input[type="number"],
+.formify-form.with-style .formify-error input[type="search"],
+.formify-form.with-style .formify-error input[type="url"],
+.formify-form.with-style .formify-error input[type="password"],
+.formify-form.with-style .formify-error select,
+.formify-form.with-style .formify-error .formify-file-button-text a {
+	border:solid 1px #ff0000;
+}
+
+.formify-form.with-style select {
+	-webkit-appearance:none;
+	outline:none;
+	font-size:1em;
+	padding:0.5em 30px 0.5em 0.5em;
+	background-image:url('images/select.png');
+	background-size:25px 12px;
+	background-position:right center;
+	background-repeat:no-repeat;
+	border:solid 1px #ccc;
+	border-radius:3px;
+	background-color:#fff;
+}
+
+.formify-form.with-style .formify-select select {
+	width:50%;
+}
+
+.formify-form.with-style input[type="submit"], .formify-form.with-style .formify-nav-button {
+	display:inline-block;
+	-webkit-appearance:none;
+	outline:none;
+	font-size:1em;
+	padding:0.5em 1em;
+	border:none;
+	border-radius:3px;
+	background-color:#00cadc;
+	color:#fff;
+	transition:width 300ms;
+}
+
+.formify-form.with-style .formify-nav-button {
+	background-color:#999;
+}
+
+.formify-form.with-style input[type="submit"]:hover {
+	background-color:#00a2b0;
+}
+
+.formify-form.with-style .formify-nav-button:hover {
+	background-color:#777;
+}
+
+.formify-form.with-style.processing input[type="submit"] {
+}
+
+.formify-form.with-style label, .formify-form.with-style div.formify-legend {
+	margin:0.5em 0;
+}
+
+.formify-form.with-style fieldset label {
+	display:block;
+	margin:0.75em 0;
+}
+
+.formify-form.with-style input[type="checkbox"], .formify-form.with-style input[type="radio"] {
+	display:none;
+}
+
+.formify-form.with-style fieldset label span {
+	display:inline-block;
+	border:solid 1px #ccc;
+	border-radius:3px;
+	vertical-align:bottom;
+	text-align:center;
+	padding:0 0.125em 0.25em 0.125em;
+	line-height:1em;
+	margin:0 0.25em 0 0;
+}
+
+.formify-form.with-style fieldset label i {
+	font-size:1em;
+	line-height:0.75em;
+	width:1em;
+	color:#777;
+	transition:color 300ms;
+	vertical-align:middle;
+	color:#00a2b0;
+}
+
+.formify-form.with-style textarea {
+	-webkit-appearance:none;
+	outline:none;
+	height:7em;
+	font-size:1em;
+	padding:0.5em;
+	border:solid 1px #ccc;
+	border-radius:3px;
+	width:60%;
+}
+
+.formify-form.with-style .redactor-editor {
+	border:solid 1px #ccc;
+	border-radius:3px;
+	margin:1em 0;
+	padding:0.5em;
+	height:12em;
+}
+
+.formify-form.with-style .redactor-toolbar {
+	box-shadow:none;
+	border:solid 1px #ccc;
+	border-radius:3px;
+	background-color:#eee;
+}
+
+.formify-form.with-style .redactor-box textarea {
+	width:100%;
+}
+
+.formify-form.with-style .formify-file-button-text a {
+	display:inline-block;
+	border:solid 1px #777;
+	padding:0.25em 0.5em;
+	border-radius:3px;
+	margin:0.25em 0;
+}
+
+.formify-form.with-style .formify-error-message {
+	display: inline-block;
+	border: solid 1px #ff0000;
+	border-radius: 3px;
+	padding: 1em;
+	transition: opacity 300ms;
+	margin:1em 0;
+}
+
+.formify-message {
+	display: block;
+	border: solid 1px #ccc;
+	border-radius: 3px;
+	padding: 1em;
+	transition: opacity 300ms;
+	margin:1em 1em 1em 0;
+	background-color:#f3f3f3;
+}
+
+@media (max-width: 600px) {
+	
+	.formify-form.with-style {
+		padding:0 2%;	
+	}
+	
+	.formify-form.with-style input[type="text"],
+	.formify-form.with-style input[type="email"],
+	.formify-form.with-style input[type="tel"],
+	.formify-form.with-style input[type="number"],
+	.formify-form.with-style input[type="search"],
+	.formify-form.with-style input[type="url"],
+	.formify-form.with-style input[type="password"] {
+		width:100%;
+	}
+
+	.formify-form.with-style .formify-select select {
+		width:100%;
+	}
+	
+}

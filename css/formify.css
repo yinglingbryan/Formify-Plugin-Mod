@@ -1,0 +1,255 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+[ng-click], [data-ng-click], [x-ng-click] {
+    cursor: pointer;
+}
+
+.btn {
+	outline:none !important;
+}
+
+.formify .fa-spinner, .formify-spinner {
+	font-size:1.125em;
+	-webkit-animation-name: spin;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 1000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 1000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.percent-10 {
+	float:left;
+	width:10%;
+}
+
+.percent-20 {
+	float:left;
+	width:20%;
+}
+
+.percent-30 {
+	float:left;
+	width:30%;
+}
+
+.percent-40 {
+	float:left;
+	width:40%;
+}
+
+.percent-50 {
+	float:left;
+	width:50%;
+}
+
+.percent-60 {
+	float:left;
+	width:60%;
+}
+
+.percent-70 {
+	float:left;
+	width:70%;
+}
+
+.percent-80 {
+	float:left;
+	width:80%;
+}
+
+.percent-90 {
+	float:left;
+	width:90%;
+}
+
+.rotating {
+	-webkit-animation:spin 1s linear infinite;
+    -moz-animation:spin 1s linear infinite;
+    animation:spin 1s linear infinite;
+    opacity:1 !important;
+}
+
+.ccm-ui .form-control.error {
+	border:solid 1px #ff0000;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+div#ccm-dashboard-content {
+	padding-bottom:0;
+}
+
+.formify nav.forms {
+	float:left;
+	width:20%;
+	margin:0 2.5%;
+	padding:2em 0;
+}
+
+div#ccm-dashboard-content div.ccm-dashboard-content-full.formify section {
+	float:right;
+	width:75%;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+
+div#ccm-dashboard-content div.ccm-dashboard-content-full.formify section.full {
+	float:none;
+	width:auto;
+	padding:2em 2%;
+}
+
+div#ccm-dashboard-content div.ccm-dashboard-content-full.formify section .formify-tabs-nav {
+	margin:2em 0;
+}
+
+.formify .formify-tabs-nav input {
+	padding:0;
+	line-height:10px;
+	border:none;
+	border-bottom:dashed 1px #ccc;
+	border-radius:0;
+	box-shadow:none;
+	display:inline-block;
+	background:transparent;
+}
+
+.formify .formify-tabs-nav li a.on-drag-hover {
+  background-color:#eee;
+}
+
+.formify nav.forms h3 {
+	text-align:center;
+	font-size:1.125em;
+	color:#aaa;
+}
+
+.formify nav.forms ul {
+	margin:0;
+	padding:0;
+	list-style-type: none;
+}
+
+.formify nav.forms ul li a {
+	display:block;
+	padding:0.75em 0;
+	color:#777;
+	border-radius:4px;
+	margin:1em 0;
+}
+
+.formify nav.forms ul li a:hover {
+	text-decoration:none;
+	color:#fff;
+}
+
+.formify nav.forms ul li a.active {
+	color:#fff;
+}
+
+.formify nav.forms ul li a i {
+	font-size:1.5em;
+	vertical-align:middle;
+	margin:0 1em;
+}
+
+.formify nav.forms ul li a.active i, .formify nav.forms ul li a:hover i {
+	color:#fff !important;
+}
+
+.formify ul li.settings a i, .formify a.settings i {
+	color:#777;
+}
+
+.formify nav.forms ul li.settings a.active, .formify nav.forms ul li.settings a:hover {
+	background-color:#777;
+}
+
+.formify ul li.fields a i, .formify a.fields i {
+	color:#006fcd;
+}
+
+.formify nav.forms ul li.fields a.active, .formify nav.forms ul li.fields a:hover {
+	background-color:#006fcd;
+}
+
+.formify ul li.records a i, .formify a.records i {
+	color:#ff0054;
+}
+
+.formify nav.forms ul li.records a.active, .formify nav.forms ul li.records a:hover {
+	background-color:#ff0054;
+}
+
+.formify ul li.notifications a i, .formify a.notifications i {
+	color:#00cccf;
+}
+
+.formify nav.forms ul li.notifications a.active, .formify nav.forms ul li.notifications a:hover {
+	background-color:#00cccf;
+}
+
+.formify ul li.attributes a i, .formify a.attributes i {
+	color:#ff7200;
+}
+
+.formify nav.forms ul li.attributes a.active, .formify nav.forms ul li.attributes a:hover {
+	background-color:#ff7200;
+}
+
+.formify ul li.export a i, .formify a.export i {
+	color:#5ed300;
+}
+
+.formify nav.forms ul li.export a.active, .formify nav.forms ul li.export a:hover {
+	background-color:#5ed300;
+}
+
+.formify ul li.integrations a i, .formify a.integrations i {
+	color:#f2a500;
+}
+
+.formify nav.forms ul li.integrations a.active, .formify nav.forms ul li.integrations a:hover {
+	background-color:#f2a500;
+}

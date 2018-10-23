@@ -1,0 +1,188 @@
+.formify-form-new {
+	float:left;
+}
+
+.formify-form-filter {
+	float:right;
+}
+
+.formify-form-mode {
+	float:right;
+	padding:0 1em;
+}
+
+.formify-form-mode i.formify-settings {
+	color:#ccc;
+}
+
+.formify-form-mode i.formify-magic {
+	color:#ccc;
+	transition: all 300ms;
+}
+
+.formify-form-mode i.formify-magic.on {
+	color:#00cccf;
+	transform:rotate(360deg);
+}
+
+.formify-intro {
+	text-align:center;
+	margin:3em 0;
+	opacity:0;
+	position:relative;
+	top:5em;
+	transition:top 500ms, opacity 500ms;
+}
+
+.ng-scope .formify-intro {
+	top:0;
+	opacity:1;
+    transition-delay: 500ms;
+}
+
+.ng-scope .formify-intro p {
+	color:#999;
+}
+
+#formify-forms-grid-view, #formify-forms-table-view {
+	display:none;
+}
+
+#formify-forms-grid-view.on {
+	display:block;
+}
+
+#formify-forms-table-view.on {
+	display:table;
+}
+
+#formify-forms-table-view thead, #formify-forms-table-view tbody {
+	width:100%;
+}
+
+#formify-forms-table-view a {
+	color:#555;
+	font-size:0.875em;
+}
+
+.formify-form-box {
+	border:solid 1px #ccc;
+	border-radius:5px;
+	width:45%;
+	margin:1.5em 5% 1.5em 0;
+	float:left;
+	padding:1em 2%;
+	position:relative;
+	opacity:0;
+	transition:opacity 200ms;
+	background-color:#fff;
+}
+
+.ng-scope .formify-form-box {
+	opacity:1;
+}
+
+.formify-form-delete {
+	position:absolute;
+	top:8px;
+	right:8px;
+	color:#aaa;
+	font-size:1.25em;
+	transition:300ms all;
+}
+
+.formify-form-delete:hover {
+	color:#ff0000;
+}
+
+.formify-form-title {
+	border-bottom:solid 1px #ccc;
+	padding-bottom:0.5em;
+}
+
+i.formify-form-magic {
+	font-size:1.25em;
+	color:#ccc;
+	transition:300ms all;
+}
+
+i.formify-form-magic.on {
+	color:#00cccf;
+	transform:rotate(360deg);
+}
+
+input[type="text"].form-box-name {
+	border:dashed 1px rgba(255,255,255,0);
+	font-size:1.5em;
+	width:90%;
+	border-radius:0;
+	border-radius:3px;
+}
+
+input[type="text"].form-box-name:hover {
+	border:dashed 1px #ccc;
+}
+
+input[type="text"].form-box-name:focus {
+	box-shadow:none;
+	border:dashed 1px #777;
+}
+
+.formify-form-box h4 {
+	float:left;
+	width:40%;
+	text-align:center;
+	padding:2em 0 0;
+}
+
+.formify-form-box h4 em {
+	font-size:3.25em;
+	font-style:normal;
+	font-weight:normal;
+	color:#00cccf;
+	display:block;
+}
+
+.formify-form-box h4 span {
+	font-size:0.75em;
+	font-weight:normal;
+}
+
+.formify-form-box ul {
+	float:left;
+	width:60%;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+.formify-form-box ul li {
+	display:block;
+	width:33.33333333%;
+	float:left;
+	text-align:center;
+	padding:2em 0 0;
+}
+
+.formify-form-box ul li a {
+	display:block;
+	color:#777;
+}
+
+.formify-form-box ul li i {
+	font-size:1.5em;
+}
+
+.formify-form-box ul li span {
+	display:block;
+	font-size:0.75em;
+	margin:0.5em 0;
+}
+
+@media screen and (max-width: 1280px) {
+	
+	.formify-form-filter {
+		display:none;
+	}
+	
+}

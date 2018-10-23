@@ -1,0 +1,270 @@
+nav.formify-records-search {
+	padding:1.5em 0;
+	border-bottom:solid 1px #ccc;
+	margin:0 2% 1em 0;
+}
+nav.formify-records-search form {
+	width:30%;
+	float:left;
+	padding:0 2.5%;
+}
+
+nav.formify-records-search a {
+	float:right;
+	margin:0 0 0 0.5em;
+}
+
+nav.formify-records-nav {
+	float:left;
+	width:35%;
+	margin:0px;
+	padding:0;
+	overflow:scroll;
+}
+
+nav.formify-records-nav ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+nav.formify-records-nav ul li {
+	margin:0;
+	padding:1.5em 5% 1.5em 10%;
+	border-bottom:solid 1px #eee;
+	cursor:pointer;
+}
+
+nav.formify-records-nav ul li:hover {
+	background-color:#eee;
+}
+
+nav.formify-records-nav ul li.on {
+	background-color:#00cccf;
+}
+
+nav.formify-records-nav ul li.more {
+	background-image:url('../images/more.gif');
+	background-repeat:no-repeat;
+	background-position:center center;
+	padding:2em 0;
+	border:none;
+}
+
+nav.formify-records-nav ul li span.checkbox {
+	float:left;
+	width:10%;
+	text-align:center;
+}
+
+nav.formify-records-nav ul li span.description {
+	float:left;
+	width:80%;
+}
+
+nav.formify-records-nav ul li span.description span {
+	display:block;
+	font-size:1.125em;
+	font-weight:600;
+	color:#444;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	width:90%;
+	overflow:hidden;
+}
+
+nav.formify-records-nav ul li.on span.description span {
+	color:#fff;
+}
+
+nav.formify-records-nav ul li span.description time {
+	font-size:0.9em;
+	color:#777;
+}
+
+nav.formify-records-nav ul li.on span.description time {
+	color:#fff;
+}
+
+nav.formify-records-nav ul li span.status {
+	display:block;
+	float:right;
+	padding:0.75em 0.5em 0 0;
+	color:#eee;
+	opacity:0.4;
+}
+
+nav.formify-records-nav ul li span.status i.fa-check {
+	color:#5ed300;
+}
+
+nav.formify-records-nav ul li span.status i.fa-times {
+	color:#ff0000;
+}
+
+nav.formify-records-nav ul li.on span.status i {
+	color:#fff;
+}
+
+article.formify-record-detail {
+	float:right;
+	width:60%;
+	margin:0 0 1em 2.5%;
+	transition:all 300ms;
+	position:relative;
+	padding:0;
+}
+
+article.formify-record-detail.off {
+	right:-1500px;
+	height:0;
+	margin:0;
+	padding:0;
+}
+
+article.formify-record-detail.on {
+	right:0;
+}
+
+article.formify-record-detail .formify-record-detail-content {
+	border:solid 1px #ddd;
+	border-radius:4px;
+	padding:0 2% 2em;
+	width:96%;
+	overflow-x:hidden;
+}
+
+article.formify-record-detail nav {
+	border-bottom:solid 1px #ddd;
+}
+
+article.formify-record-detail nav ul {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+article.formify-record-detail nav ul li {
+	margin:0;
+	padding:0;
+	display:inline-block;
+	font-size:1.75em;
+	padding:0.5em 0.25em;
+	color:#999;
+}
+
+article.formify-record-detail nav ul.formify-record-detail-approval {
+	float:left;
+}
+
+article.formify-record-detail div.edit {
+	color:#ccc;
+	float:right;
+	padding:0.5em;
+	font-size:0.75em;
+}
+
+article.formify-record-detail div.owner {
+	color:#ccc;
+	float:left;
+	padding:0.5em;
+	font-size:0.75em;
+}
+
+i.formify-record-detail-approve:hover {
+	opacity:0.4;
+	color:#5ed300;
+}
+
+i.formify-record-detail-approve.on {
+	opacity:1;
+	color:#5ed300;
+}
+
+i.formify-record-detail-reject:hover {
+	opacity:0.4;
+	color:#ff0000;
+}
+
+i.formify-record-detail-reject.on {
+	opacity:1;
+	color:#ff0000;
+}
+
+article.formify-record-detail nav ul.formify-record-detail-delete {
+	float:right;
+}
+
+article.formify-record-detail nav ul.formify-record-detail-delete li i.formify-record-detail-delete:hover {
+	color:#ff0000
+}
+
+article.formify-record-detail h2 {
+	font-weight:normal;
+}
+
+article.formify-record-detail h3 {
+	font-size:0.875em;
+	color:#006fcd;
+}
+
+article.formify-record-detail p {
+	font-size:1.125em;
+	line-height:1.5em;
+}
+
+article.formify-record-selected-records {
+	float:right;
+	width:60%;
+	margin:1em 2.5%;
+	padding:0 2% 2em;
+	transition:all 300ms;
+	position:relative;
+	border:solid 1px #ddd;
+	border-radius:4px;
+}
+
+article.formify-record-selected-records p {
+	text-align:center;
+	font-size:2.5em;
+	padding:0.5em 0;
+	color:#555;
+}
+
+article.formify-record-selected-records ul {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	text-align:center;
+}
+
+article.formify-record-selected-records ul li {
+	display:inline-block;
+	font-size:2.75em;
+	text-align:center;
+	padding:0.25em 0.5em;
+	opacity:0.4;
+}
+
+article.formify-record-selected-records ul li.approve {
+	color:#5ed300;
+}
+
+article.formify-record-selected-records ul li.reject {
+	color:#ff0000;
+}
+
+article.formify-record-selected-records ul li.delete {
+	color:#ff0000;
+}
+
+article.formify-record-selected-records ul li:hover {
+	opacity:1;
+}
+
+article.formify-record-selected-records ul li span {
+	display:block;
+	font-size:0.25em;
+	text-transform:uppercase;
+	color:#000;
+}

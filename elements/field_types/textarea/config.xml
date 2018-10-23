@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<fieldtype name="Textarea" iconclass="fa-align-left" hasoptions="false">
+
+	<properties>
+		<property handle="size" />
+		<property handle="regex" />
+		<property handle="maxlength" />
+	</properties>
+	
+</fieldtype>

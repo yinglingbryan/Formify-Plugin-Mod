@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<fieldtype name="Select" iconclass="fa-caret-square-o-down" hasoptions="true">
+
+	<properties>
+		<property handle="firstOptionBlank" />
+	</properties>
+	
+</fieldtype>

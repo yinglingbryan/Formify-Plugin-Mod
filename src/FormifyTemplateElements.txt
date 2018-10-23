@@ -1,0 +1,42 @@
+Repeat Options
+formify-repeat="x in answers"
+formify-repeat="x in handle"
+
+If Options
+formify-if="handle"
+formify-status="approved"
+formify-status="pending"
+formify-status="rejected"
+formify-comparison="="
+formify-value="comparison value"
+
+Placeholders
+
+{{handle}}
+{{handle.url}}
+[maxlength:"XX"]
+[format:"number"]
+[format:"currency"]
+[separator:"separator"]
+[html:"true"]
+[striptags:"true"]
+[allowedtags:"<tag><tag>"]
+
+
+{{user}}
+{{user.username}}
+{{user.email}}
+{{user.attribute_handle}}
+{{user.id}}
+
+
+{{timestamp}}
+[format:"F j, Y"];
+
+
+{{ip}}
+{{id}}
+{{detailurl}}
+{{amountcharged}}
+{{amountpaid}}
+{{status}}

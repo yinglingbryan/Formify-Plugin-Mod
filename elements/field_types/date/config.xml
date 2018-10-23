@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<fieldtype name="Date" iconclass="fa-calendar" hasoptions="false">
+
+	<properties>
+		<property handle="size" />
+		<property handle="regex" />
+		<property handle="dateFormat" />
+		<property handle="dateInterface" />
+		<property handle="minYear" />
+		<property handle="maxYear" />
+		<property handle="isExpiration" />
+	</properties>
+	
+	<headeritems>
+		<item type="css" file="jquery-ui.css" />
+	</headeritems>
+	
+	<footeritems>
+		<item type="javascript" file="jquery-ui.js" />
+	</footeritems>
+	
+</fieldtype>

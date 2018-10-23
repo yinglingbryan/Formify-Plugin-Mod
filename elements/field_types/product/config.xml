@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<fieldtype name="Product" iconclass="fa-money" hasoptions="false">
+
+	<properties>
+		<property handle="price" />
+		<property handle="qtyStart" />
+		<property handle="qtyIncrement" />
+		<property handle="qtyEnd" />
+	</properties>
+	
+</fieldtype>

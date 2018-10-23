@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<fieldtype name="Label" iconclass="fa-file-text-0" hasoptions="false">
+
+	<properties>
+		<property handle="nlToBr" />
+	</properties>
+	
+</fieldtype>

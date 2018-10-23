@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="btFormifyView">
+		<field name="bID" type="I">
+			<key />
+			<unsigned />
+		</field>
+		<field name="fID" type="I" />
+		<field name="listTemplateID" type="C" size="255"></field>
+		<field name="detailDestination" type="C" size="255" />
+		<field name="detailTemplateID" type="C" size="255"></field>
+		<field name="detailCID" type="I" />
+		<field name="sortBy" type="C" size="255"></field>
+		<field name="sortOrder" type="C" size="4"/>
+		<field name="pageSize" type="I"/>
+		<field name="displayPaginator" type="I1"/>
+		<field name="requireApproval" type="I1"/>
+		<field name="requireOwnership" type="I1" />
+		<field name="includeExpired" type="I1"/>
+		<field name="enableSearch" type="I1"/>
+		<field name="searchPlaceholder" type="C" size="255"/>
+		<field name="enableSearchReset" type="I1"/>
+		<field name="enableDateFilter" type="I1" />
+		<field name="enableUserSort" type="I1"/>
+		<field name="sortLabel" type="C" size="255"/>
+		<field name="sortButtonLabel" type="C" size="255"/>
+		<field name="sortableFields" type="C" size="255"/>
+		<field name="filterFields" type="C" size="255" />
+		<field name="filterValues" type="C" size="255" />
+	</table>
+</schema>

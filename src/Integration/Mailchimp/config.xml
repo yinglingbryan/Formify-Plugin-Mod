@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<integration name="MailChimp">
+	
+	<keys>
+		<key context="form" name="API Key" handle="api_key" type="text" />
+		<key context="form" name="List ID" handle="list_id" type="text" />
+		<key context="form" name="Subscription method" handle="method" type="select">
+			<options>
+				<option value="all">Subscribe all records</option>
+				<option value="agreement">Require agreement</option>
+			</options>
+		</key>
+		<key context="field" name="Send to MailChimp as" handle="mailchimp_value" type="select">
+			<options>
+				<option value="first_name">First Name</option>
+				<option value="last_name">Last Name</option>
+				<option value="email">Email</option>
+			</options>
+		</key>
+	</keys>
+	
+</integration>

@@ -1,0 +1,8 @@
+.formify-settings {
+	padding-bottom:8em;
+}
+
+textarea.form-control {
+	width:100% !important;
+	height:5em !important;
+}

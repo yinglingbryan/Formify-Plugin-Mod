@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<fieldtype name="Attachment" iconclass="fa-cloud-upload" hasoptions="false">
+
+	<properties>
+		<property handle="fsID" />
+	</properties>
+	
+	<footeritems>
+		<item type="javascript" file="jquery-ui.js" />
+		<item type="javascript" file="block/jquery.ui.widget.js" package="formify" />
+		<item type="javascript" file="block/jquery.iframe-transport.js" package="formify" />
+		<item type="javascript" file="block/jquery.fileupload.js" package="formify" />
+	</footeritems>
+	
+</fieldtype>

@@ -1,0 +1,132 @@
+nav.formify-options-nav {
+	float:left;
+	width:30%;
+	margin:0px;
+	padding:0;
+	overflow:scroll;
+}
+
+nav.formify-options-nav ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+nav.formify-options-nav ul li {
+	margin:0;
+	padding:1.5em 5% 1.5em 10%;
+	border-bottom:solid 1px #eee;
+	cursor:pointer;
+}
+
+nav.formify-options-nav ul li:hover {
+	background-color:#eee;
+}
+
+nav.formify-options-nav ul li.on {
+	background-color:#00cccf;
+}
+
+nav.formify-options-nav ul li span.name {
+	display:block;
+	font-size:1.125em;
+	font-weight:600;
+	color:#444;
+}
+
+nav.formify-options-nav ul li.on span.name {
+	color:#fff;
+}
+
+nav.formify-options-nav ul li span.count {
+	font-size:0.9em;
+	color:#777;
+}
+
+nav.formify-options-nav ul li.on span.count {
+	color:#fff;
+}
+
+article.formify-option-group-detail {
+	float:right;
+	width:65%;
+	margin:1em 2.5%;
+	transition:all 300ms;
+	position:relative;
+	padding:0;
+}
+
+article.formify-option-group-detail.off {
+	right:-1500px;
+	height:0;
+	margin:0;
+	padding:0;
+}
+
+article.formify-option-group-detail.on {
+	right:0;
+}
+
+article.formify-option-group-detail .formify-option-group-detail-content {
+	border:solid 1px #ddd;
+	border-radius:4px;
+	padding:1em 2% 2em;
+	width:96%;
+}
+
+article.formify-option-group-detail nav {
+}
+
+article.formify-option-group-detail nav ul {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	float:right;
+}
+
+article.formify-option-group-detail nav ul li {
+	margin:0;
+	padding:0;
+	display:inline-block;
+	font-size:1.75em;
+	padding:0 0.25em;
+	color:#999;
+}
+
+article.formify-option-group-detail nav ul.formify-option-group-detail-delete {
+	float:right;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	font-size: 1.75em;
+	padding: 0.5em 0.25em;
+	color: #999;
+}
+
+article.formify-option-group-detail nav ul.formify-option-group-delete li i.formify-record-option-delete:hover {
+	color:#ff0000
+}
+
+.formify-option-group-detail-setting {
+	margin:0.75em 0;
+}
+
+.formify-option-group-detail-setting label {
+	float:left;
+	width:20%;
+}
+
+.formify-option-input {
+	float:left;
+	width:80%;
+}
+
+article.formify-option-group-detail h3 {
+	font-size:1.25em;
+	color:#006fcd;
+}
+
+article.formify-option-group-detail p {
+	font-size:1em;
+	line-height:1.5em;
+}
